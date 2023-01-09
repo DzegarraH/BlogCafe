@@ -1,0 +1,433 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --FuenteParrafo: "Open Sans", sans-serif;
+
+  --primario: #784d3c;
+  --claro: #e1e1e1;
+  --blanco: #ffffff;
+  --gris: #3f3e3e;
+  --negro: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--FuenteParrafo);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* GLOBAL */
+.contenedor {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  filter: grayscale(0);
+}
+
+.img-border {
+  border-radius: 1rem;
+}
+
+/* UTILIDADES */
+.no-margin {
+  margin: 0;
+}
+
+.si-margin {
+  margin: 0 1rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.si-padding {
+  padding: .5rem 1rem;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+/* HEADER */
+
+.web .header {
+  background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
+  background-image: url(../img/banner.webp);
+}
+.header {
+  background-image: url(../img/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__texto {
+  color: var(--blanco);
+  margin-top: 5rem;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: var(--blanco);
+}
+
+.logo__nombre {
+  font-weight: normal;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.logo__bold {
+  font-weight: 700;
+}
+
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+
+.contenido-principal {
+  margin: 2rem auto;
+}
+
+.entrada {
+  border-bottom: 1px solid var(--claro);
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.boton {
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.84rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.boton-border {
+  border-radius: 1rem;
+}
+
+.boton--primario {
+  background-color: var(--negro);
+}
+
+.boton--secundario {
+  background-color: var(--primario);
+}
+
+.cursos {
+  list-style: none;
+}
+
+.widget-curso {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+  margin-bottom: 0;
+  border: 0;
+}
+.widget-curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+}
+
+.widget-curso__info {
+  font-weight: normal;
+  font-family: var(--FuenteParrafo);
+}
+.widget-curso__label,
+.widget-curso__info {
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: var(--negro);
+  margin-top: 4rem;
+}
+
+/* SOBRE NOSOTROS */
+.sobre-nosotros__texto p {
+  margin: 1rem 1rem;
+}
+
+/* CRUSO */
+.curso {
+  margin: 0 1rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type {
+  border: none;
+}
+
+.curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+}
+
+.curso__info {
+  font-weight: normal;
+  font-family: var(--FuenteParrafo);
+}
+.curso__label,
+.curso__info {
+  font-size: 2rem;
+}
+
+/* CONTACTO */
+
+.contacto-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.75);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.campo__label {
+  text-align: left;
+}
+
+.campo__field {
+  flex: 1;
+  width: 100%;
+  border: 1px solid var(--gris);
+  border-radius: 1rem;
+}
+
+.campo__field--textare {
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* ------------------------------------- */
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 95%;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .barra {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navegacion__enlace {
+    display: inline;
+    margin: 1rem;
+  }
+
+  .header__texto {
+    margin-top: 10rem;
+  }
+
+  .contenido-principal {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+
+  .boton {
+    display: inline-block;
+    border-radius: 1rem;
+  }
+
+  .boton-sin-margin {
+    margin: 0;
+  }
+
+  .boton:hover {
+    cursor: pointer;
+  }
+
+  /* SOBRE NOSOTROS */
+
+  .sobre-nosotros {
+    margin: 5rem 0;
+    margin-left: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .sobre-nosotros__imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sobre-nosotros__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  /* CRUSO */
+  .curso {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+
+  /* CONTACTO */
+
+  .contacto-bg {
+    border-radius: 1rem;
+    width: 97%;
+    margin: auto;
+  }
+
+  .formulario {
+    width: 70%;
+    padding: 4rem;
+  }
+
+  .campo {
+    flex-direction: row;
+  }
+
+  .campo:last-of-type {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .barra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 85%;
+  }
+
+  .sobre-nosotros__texto {
+    font-size: 1.5rem;
+  }
+
+  .boton:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .logo__nombre:hover {
+    color: var(--primario);
+    transform: scale(1.02);
+  }
+
+  img {
+    filter: grayscale(1);
+  }
+
+  img:hover {
+    transform: scale(1.01);
+    filter: grayscale(0);
+  }
+}
+
+@media (min-width: 1440px) {
+  .sobre-nosotros__texto {
+    font-size: 2rem;
+  }
+}
