@@ -87,7 +87,7 @@ img {
 }
 
 .si-padding {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .centrar-texto {
@@ -417,6 +417,7 @@ img {
   }
 
   img {
+    cursor: pointer;
     filter: grayscale(1);
   }
 
